@@ -1,5 +1,4 @@
 
-#x e y son listas.
 
 import numpy as np
 
@@ -28,7 +27,7 @@ def obtener_puntos():
 #calculo de las diferencias y devolucion de tabla
 def diferencias_dividas(x, y):
     n = len(x)
-    #creo una matriz f 3x3 llena de 0
+    #creo una matriz f cuadrada llena de 0
     f = np.zeros((n, n))
     # La primera columna de f son los elementos de y
     f[:,0] = y
@@ -42,7 +41,7 @@ def diferencias_dividas(x, y):
     
     return f
 
-#formacion del polinomio 
+#formacion del polinomio y aproximacion de xi 
 def polinomio(x, y, xi):
     f = diferencias_dividas(x, y)
     n = len(x)

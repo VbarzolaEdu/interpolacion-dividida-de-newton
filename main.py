@@ -9,18 +9,22 @@ x,y= obtener_puntos()
 
 if len(x)==len(y):
     print(f"Formaremos un polinomio de grado {len(x)-1}" )
+else:
+    print("Error, la cantidad de puntos en x y y no es la misma")
+    exit()
 
 print (x,y)
 
 #valor a aproximar
-xi=input("Por favor,coloque a que valor le gustaria apoximar el polinomio.")
+xi=input("Por favor,coloque a que valor le gustaria apoximar el polinomio: ")
 
 matriz=diferencias_dividas(x,y)
 print("La matriz de diferencias dividas es:")
 print(matriz)
 
 
-print(polinomio(x,y,float(xi)))
+print(f"El punto reemplazado en el polinomio es: {polinomio(x,y,float(xi))}")
+
 
 
 
