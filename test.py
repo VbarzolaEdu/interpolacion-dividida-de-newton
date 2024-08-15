@@ -5,5 +5,4 @@ class TestDiferenciasDivididas(unittest.TestCase):
     def test_diferenciasDivididas_withEmptyLists(self):
         self.assertEqual(diferencias_dividas([], []), [])
 
-    
 unittest.main()

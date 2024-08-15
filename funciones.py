@@ -2,6 +2,7 @@
 
 import numpy as np
 
+#esta funcion me permite obtener los puntos x,y del usuario.
 def obtener_puntos():
     x=[]
     y=[]

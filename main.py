@@ -3,7 +3,7 @@ from funciones import diferencias_dividas,polinomio,obtener_puntos
 
 
 
-print("Por favor, escriba los distintos puntos que usaremos para crear el polinomio. Para ello escriba el valor de X, separado de una coma, y luego Y. Ejemplo: [x,y];[2,23]. Para finalizar escriba E")
+print("Por favor, escriba los distintos puntos que usaremos para crear el polinomio. Para ello escriba el valor de X, separado de una coma, y luego Y. Ejemplo: x,y ; 2,23. Para finalizar escriba E")
 #obtencion de puntos
 x,y= obtener_puntos()
 
